@@ -16,7 +16,7 @@ jobs:
         port: ${{ secrets.PORT }}
         script:  | 
             whoami
-            mkdir /test_project/
-            cd /test_project/
+            mkdir /tmp/test_project/
+            cd /tmp/test_project/
             curl google.com -o google.html
             ls -ls
