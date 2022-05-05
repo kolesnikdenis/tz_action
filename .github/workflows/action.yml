@@ -1,4 +1,4 @@
-name: test
+name: test1
 
 on: [push]
 
@@ -16,6 +16,6 @@ jobs:
         port: ${{ secrets.PORT }}
         script:  | 
             whoami
-            cp /test_project/
+            cd /test_project/
             curl google.com -o google.html
             ls -ls
